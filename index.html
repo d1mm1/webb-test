@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headlines - The Lorem Ipsum</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .image-container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            background-color: (12, 12, 12);
+            overflow: hidden;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #151515;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .arrow:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logga">
+                <img src="pauli-hotels-logga.webp" alt="" srcset="">
+            </div>
+            <nav class="txt">
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+                </style>
+                <a href="index.html">VÄLKOMMEN</a>
+                <a href="boka.html">BOKA</a>
+                <a href="hitta.html">HITTA</a>
+                <a href="kontakta.html">KONTAKTA</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="why">
+                <div class="varf">
+                    <legend>Varför Pauli hotels?</legend>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam et quod laborum aspernatur.
+                        Recusandae iste eos earum aut numquam, odit quis sed! Ullam, dolore in incidunt, aliquid qui
+                        expedita vitae cum blanditiis deleniti, aliquam veritatis! Placeat omnis perspiciatis sint, sed
+                        amet pariatur numquam commodi est esse obcaecati, quibusdam animi!</p>
+                </div>
+                <div class="inf">
+                    <div class="inf1">
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <div class="inf2">
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </div>
+            </section>
+            <section class="rum">
+                <div class="image-container">
+                    <img src="rummet.webp" alt="rum" class="te21a">
+                    <div class="arrow left" onclick="changeImage(-1)">&lt;</div>
+                    <div class="arrow right" onclick="changeImage(1)">&gt;</div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Pauli Hotels | Föreningsgatan 41, 211 50 Malmö | +46 067-32 33 11</p>
+        </footer>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        const images = [
+            'rummet.webp',
+            'pool.webp'
+        ];
+        const imageContainer = document.querySelector('.image-container');
+        const imageElement = imageContainer.querySelector('img');
+
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            } else if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            }
+
+            const imageUrl = images[currentImageIndex];
+            imageElement.src = imageUrl;
+        }
+    </script>
+</body>
+
+</html>

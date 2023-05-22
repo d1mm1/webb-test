@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+
+header {
+    background-image: url(pauli.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logga {
+    width: 20vw;
+    display: flex;
+}
+
+.txt {
+    border: solid;
+    font-size: 27px;
+    text-align: center;
+    word-spacing: 50px;
+    background-color: #151515;
+}
+
+a:hover {
+    color: rgb(68, 59, 6);
+
+}
+
+a {
+    color: #B5935E;
+    text-decoration: none;
+}
+
+main {
+    background-color: #151515;
+    color: #B5935E;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+}
+
+.rum {
+    display: flex;
+    flex-basis: 48%;
+    margin-left: 2%;
+    padding: 2%;
+    border: 5px solid black;
+    border-left-width: 60px;
+    border-right-width: 60px;
+    background: #020403;
+    border-radius: 15px;
+
+
+}
+
+
+.te21a {
+    padding-bottom: 3%;
+}
+
+.varf {
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.varf p {
+    font-style: italic;
+}
+
+.varf legend {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.inf {
+    flex-basis: 48%;
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 5%;
+    font-style: italic;
+    border-radius: 20px;
+    border: 6px solid rgb(12, 12, 12);
+    background: #020403;
+    width: 600px;
+
+}
+
+.why {
+    padding-left: 5%;
+}
+
+footer {
+    border: 6px solid black;
+    border-radius: 10%;
+    background: rgb(12, 12, 12);
+    color: #B5935E;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 999px;
+    background-color: #151515;
+}
+
+.booking {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inf {
+    flex-basis: 48%;
+}
+
+.contact {
+    flex-basis: 48%;
+    background-color: #000000;
+    color: #B5935E;
+    padding: 20px;
+    margin-top: 20px;
+    font-style: italic;
+    border-radius: 5%;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #000000;
+    color: #B5935E;
+}
+
+.booking {
+    background-color: black;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 50px;
+    font-style: italic;
+}
+
+.booking-form {
+    padding: 30px;
+    font-style: italic;
+}
+
+.booking-form h2 {
+    margin-bottom: 20px;
+}
+
+.booking-form form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.booking-form form input,
+.booking-form form select,
+.booking-form form textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #000000;
+    color: #B5935E;
+}
+
+.booking-form form button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.map-container {
+    font-style: italic;
+}
