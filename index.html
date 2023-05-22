@@ -121,6 +121,20 @@
     </div>
 
     <script>
+
+        if ('IntersectionObserver' in window) {
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+
+                    }
+                });
+            });
+
+            observer.observe(document.getElementById('target-element'));
+        } else {
+        }
         let currentImageIndex = 0;
         const images = [
             'rummet.webp',
